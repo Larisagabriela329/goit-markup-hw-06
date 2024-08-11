@@ -719,6 +719,7 @@ color: #434455;
 }
 .footer-logo-paragraph {
 text-align: center;
+margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -759,6 +760,7 @@ text-align: left;
 .footer-social-media-icons {
     display: flex; 
     gap: 16px;
+    justify-content: center;
 }
 
 .footer-subtitle {
@@ -903,6 +905,7 @@ cursor: pointer;
     .footer-logo-paragraph {
         text-align: left;
         min-width: 264px;
+        margin-bottom: 0px;
     }
 
     .footer-logo {
