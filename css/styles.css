@@ -930,6 +930,7 @@ cursor: pointer;
 @media (min-width: 1158px) {
     .footer-section {
         padding: 100px 0; 
+        width: 1440px;
     }
     .footer-container {
         width: 1440px;
