@@ -15,6 +15,12 @@
         <div class="container header-container">
         <nav class="header-nav">
             <a href="./index.html" class="header-logo">Web<span class="logo-studio-header">Studio</span></a>
+            <button type="button" class="menu-button">
+            <svg width="24" height="24" class="mobile-menu-svg">
+                <use href="./images/icons.svg#icon-mobile-menu"/>
+            </svg>
+            </button>
+           
 
             <ul class="header-list">
     <li class="header-item"><a href="./index.html" class="header-link header-link-active"> Studio</a></li>
@@ -22,12 +28,14 @@
     <li class="header-item"><a href="" class="header-link"> Contacts</a></li>
 </ul>
         </nav>
+
     <address class="header-address">
         <ul class="address-items">
        <li><a href="mailto:info@devstudio.com" class="address-item"> info@devstudio.com</a></li>
        <li><a href="tel:+110001111111" class="address-item"> +11 (000) 111-11-11</a></li>
         </ul>
     </address>
+
 </div>
     </header>
     <main>
@@ -138,7 +146,8 @@
             </div>
                 </li>
                 <li class="team">
-                    <img src="./images/FrontendDeveloperTom.jpg"
+                    <img 
+                    src="./images/FrontendDeveloperTom.jpg"
                     alt="Photo Frontend Developer Tom"
                     width="264"
                     height="260"
@@ -271,7 +280,8 @@
             <h2 class="portofolio-title">Our Portfolio</h2>
             <ul class="portofolio-container">
                 <li class="portofolio-item-container">
-                    <div class="portofolio-image"><img src="./images/BankingApp.jpg"
+                    <div class="portofolio-image">
+                    <img src="./images/BankingApp.jpg"
                     alt="Banking app photo"
                     width="360"
                     height="300"
@@ -543,6 +553,69 @@
         </form>
 
     </div>
+    </div>
+
+
+    <div class="mobile-menu-modal is-open">
+        <div class="menu-container">
+            <button type="button" class="close-button">
+                <svg width="8" height="8" class="svg-close">
+                    <use href="./images/icons.svg#icon-close" />
+                </svg>
+            </button>
+
+            <ul class="menu-list">
+                <li class="menu-item"><a href="./index.html" class="menu-link menu-link-active"> Studio</a></li>
+                <li class="menu-item"><a href="" class="menu-link"> Portfolio</a></li>
+                <li class="menu-item"><a href="" class="menu-link"> Contacts</a></li>
+            </ul>
+                    </nav>
+            
+                <address class="menu-address">
+                    <ul class="menu-address-items">
+                   <li><a href="mailto:info@devstudio.com" class="menu-address-item"> info@devstudio.com</a></li>
+                   <li><a href="tel:+110001111111" class="menu-address-item"> +11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+
+                <div class="menu-social-icons">
+                    <ul class="menu-social-media-icons">
+                        <li class="footer-icon">
+                         <a href="#" class="footer-link">
+                         <svg width="24" height="24" class="footer-svg"> 
+                             <use href="./images/icons.svg#icon-instagram" />
+                         </svg>
+                     </a>
+                     </li>
+                     <li class="footer-icon">
+                         <a href="#" class="footer-link">
+                         <svg width="24" height="24" class="footer-svg"> 
+                             <use href="./images/icons.svg#icon-twitter" />
+                         </svg>
+                     </a>
+                     </li>
+                     <li class="footer-icon">
+                         <a href="#" class="footer-link">
+                         <svg width="24" height="24" class="footer-svg"> 
+                             <use href="./images/icons.svg#icon-facebook" />
+                         </svg>
+                         </a>
+                     </li>
+                     <li class="footer-icon">
+                         <a href="#" class="footer-link">
+                         <svg width="24" height="24" class="footer-svg"> 
+                             <use href="./images/icons.svg#icon-linkedin" />
+                         </svg>
+                         </a>
+                     </li>
+                     </ul>
+
+                </div>
+
+
+
+        </div>
+
     </div>
     <script src="./index.js"></script>
 </body>
