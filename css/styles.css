@@ -203,7 +203,7 @@ background-color: transparent;
 /* Header desktop - min 1158 */
 @media (min-width: 1158px) {
     .header-container {
-        width: 1158px;
+        width: 1440px;
     }
 
     .header-logo {
@@ -410,6 +410,11 @@ opacity: 0px;
  /* About the company for desktop - min 1158 */
 
 @media (min-width: 1158px) {
+
+    .about-company {
+        width: 1440px; 
+    }
+    
     .about-title {
         font-size: 20px;
         font-weight: 500;
@@ -565,6 +570,7 @@ text-align: center;
 
     .team-section {
         padding: 120px 0;
+        width: 1440px;
     }
 
     .team-container {
@@ -686,6 +692,7 @@ color: #434455;
     .portofolio-section {
         padding-top: 120px;
         padding-bottom: 120px; 
+        width: 1440px;
     }
 
     .portofolio-item-container {
