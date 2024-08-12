@@ -27,22 +27,6 @@ body {
     background-color: #FFFFFF;
 }
 
-.container {
-    max-width: 320px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-@media (min-width: 1158px) {
-    .container {
-        max-width: 1158px;
-    }
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -60,14 +44,17 @@ img {
 
 .header-container {
 width: 320px;
-height: auto;
+height: 56px;
 display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 16px;
 }
 
 .header-list {
     display: none;
 }
-        
+
 
 .header-logo {
 font-family: "Raleway", sans-serif; 
@@ -79,7 +66,6 @@ text-align: left;
 color: #4D5AE5;
 text-transform: uppercase;
 text-decoration: none;
-margin-right: 149px;
 }
 
 .logo-studio-header {
@@ -95,11 +81,10 @@ color: #4D5AE5;
 }
 
 .menu-button {
-top: 4.8px;
-left: 3.6px;
-gap: 0px;
-margin-top: 21px;
-color: transparent; 
+position: absolute;
+width: 24px;
+height: 24px;
+color: #ffffff; 
 border: none;
 }
 
@@ -228,7 +213,7 @@ border: none;
     }
 }
 
-/* End of header desktop */
+/* End of header for desktop */
 
 /* End of header section */
 
@@ -238,10 +223,8 @@ border: none;
 .main-section {
 background-color: #2E2F42;
 opacity: 0px;
-width: 320px;
+min-width: 320px;
 height: 432px;
-top: 56px;
-gap: 0px;
 opacity: 0px;
 padding: 188px 0;
 background-color: #2E2F42B2;
@@ -302,6 +285,42 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #404BBF; 
 }
 
+/* Main section - tablet min 768 */
+
+@media (min-width: 768px) {
+    .main-section {
+    min-width: 768px;
+    height: 436px;
+    top: 72px;
+    max-width: 1440px; 
+    }
+    
+    .main-title {
+    font-size: 56px;
+    line-height: 60px;
+    max-width: 496px;
+    margin-bottom: 48px;
+    }
+    }
+
+/* End of main section - tablet */
+
+/* Main section for desktop - min 1158 */
+
+@media (min-width: 1024px) {
+    .main-section {
+    width: 1440px;
+    height: 600px;
+    top: 72px;
+    max-width: 1440px; 
+    }
+    
+    }
+ /* End of main section for desktop */
+    
+
+
+/* About the company section */
 
 .about-company {
     padding: 120px 0; 
@@ -311,6 +330,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     gap: 72px;
     flex-direction: column;
+    align-items: center;
 }
 
 .about-icons {
@@ -339,79 +359,6 @@ opacity: 0px;
         overflow: hidden;
       }
 
-/* Main section - tablet min 768 */
-
-@media (min-width: 768px) {
-    .main-section {
-    width: 768px;
-    height: 436px;
-    top: 72px;
-    max-width: 1440px; 
-    }
-    
-    .main-title {
-    font-size: 56px;
-    line-height: 60px;
-    max-width: 496px;
-    margin-bottom: 48px;
-    }
-    }
-
-
- @media (min-width: 768px) and (max-width: 1023px) {
-    .about-container {
-        gap: 24px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .about-title-container {
-        flex: 0 0 calc((100% - 24px) / 2);
-    }
-}
-
-/* End of main section - tablet */
-
-/* Main section for desktop - min 1158 */
-
-@media (min-width: 1024px) {
-    .main-section {
-    width: 1440px;
-    height: 600px;
-    top: 72px;
-    max-width: 1440px; 
-    }
-    
-    .about-container {
-    flex-direction: row;
-        }
-    
-    .about-icons {
-        width: 264px;
-        height: 112px;
-        gap: 0px;
-        border: 1px 0px 0px 0px;
-        opacity: 0px;
-        border: 1px solid #8E8F99;
-        padding: 24, 100, 24, 100;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        background-color: #f4f4fd; 
-        border-radius: 4px; 
-        margin-bottom: 8px;
-    }
-    
-    }
-    
-    
-    /* End of main section for desktop */
-    
-
-/* End of main section */
-
-/* About the company section */
-
 .about-title {
     font-size: 36px;
     font-weight: 700;
@@ -436,9 +383,23 @@ opacity: 0px;
     .about-title {
      text-align: left;
  }
+
+ .about-container {
+    gap: 24px;
+    flex-direction: row;
+}
+}
+
+ @media (min-width: 768px) and (max-width: 1157px) {
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    .about-title-container {
+        flex: 0 0 calc((100% - 24px) / 2);
+    }
  }
- 
- /* End of about the company for tablet */
+
 
  /* About the company for desktop - min 1158 */
 
@@ -452,11 +413,31 @@ opacity: 0px;
     .about-paragraph {
 font-weight: 400;
     }
-}
+
+    .about-container {
+        flex-direction: row;
+            }
+        
+    .about-icons {
+            width: 264px;
+            height: 112px;
+            gap: 0px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+            border: 1px solid #8E8F99;
+            padding: 24, 100, 24, 100;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            background-color: #f4f4fd; 
+            border-radius: 4px; 
+            margin-bottom: 8px;
+        }
+    }
 
 /* End of about the company for desktop */
 
-
+/* Team section */
 
 .team-container {
     display: flex;
