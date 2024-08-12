@@ -231,14 +231,17 @@ height: 432px;
 opacity: 0px;
 padding: 188px 0;
 background-color: #2E2F42B2;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-image-set(
-    url(../images/PeopleOfficeBackground.jpg) 1x, 
-    url(../images/PeopleOfficeBackground@2.png) 2x);
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/PeopleOfficeBackground.jpg); 
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 max-width: 1440px; 
+}
+
+@media (min-resolution: 192dpi) {
+    .main-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/PeopleOfficeBackground@2.png);
+    }
 }
 
 .main-section-container {
