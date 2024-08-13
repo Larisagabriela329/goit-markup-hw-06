@@ -932,14 +932,13 @@ cursor: pointer;
 
 @media (min-width: 1158px) {
     .footer-section {
-        padding: 100px 0; 
         width: 1440px;
     }
     .footer-container {
         width: 1440px;
         height: 312px;
         flex-direction: row;
-        padding: 100px 0;
+        padding: 100px;
         align-items: baseline;
     }
 
@@ -949,7 +948,6 @@ cursor: pointer;
 
     .footer-logo-social {
         display: flex;
-        margin-left: 156px;
     }
        .footer-subscribe {
         margin-left: 80px;
