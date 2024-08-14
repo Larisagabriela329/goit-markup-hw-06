@@ -710,7 +710,7 @@ color: #434455;
 }
 .footer-container {
     min-width: 320px;
-    height: auto;
+    height: 664px;
     top: 6552px;
     gap: 72px;
     border: 1px 0px 0px 0px;
@@ -890,6 +890,7 @@ cursor: pointer;
         gap: 24px;
         flex-direction: row;
         flex-wrap: wrap;
+        height: 312px;
     }
 
     .footer-logo-social {
@@ -992,7 +993,7 @@ background: #FCFCFC;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-padding: 72px 24px 24px 24px;
+/*padding: 72px 24px 24px 24px;*/
 }
 
 .close-button {
@@ -1043,7 +1044,8 @@ height: 336px;
 gap: 8px;
 border-radius: 4px 0px 0px 0px;
 opacity: 0px;
-margin-left: -8px;
+margin-left: 16px;
+margin-right: 16px;
 }
 
 @media (min-width: 768px) {
@@ -1055,7 +1057,8 @@ margin-left: -8px;
     .modal-form {
     width: 360px;
     height: 336px;
-    margin-left: 0;
+    margin-left: 24px;
+    margin-right: 24px;
     }
 }
 
@@ -1069,8 +1072,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #2E2F42;
-
-margin-bottom: 16px;
+margin: 72px 16px 16px 16px;
 
 }
 
@@ -1109,9 +1111,6 @@ margin-bottom: 16px;
     fill: #4D5AE5;
 }
 
-.comment-field {
-    margin-bottom: 16px;
-}
 
 .textarea-comment {
     width: 100%;
@@ -1145,10 +1144,6 @@ color: #8E8F99;
 
 display: block;
 margin-bottom: 4px;
-}
-
-.conditions-field {
-    margin-bottom: 24px;
 }
 
 .conditions-label {
@@ -1202,6 +1197,7 @@ color: #4D5AE5;
     color: #ffffff; 
     cursor: pointer;
     background-color: #4D5AE5;
+    padding: 16px 32px 16px 32px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
