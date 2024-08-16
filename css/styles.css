@@ -720,9 +720,15 @@ color: #434455;
     align-items: center;
     flex-direction: column;
 }
+
+.footer-logo-social {
+    margin-top: 50px;
+}
+
 .footer-logo-paragraph {
 text-align: center;
 margin-bottom: 72px;
+width: 288px;
 }
 
 .footer-logo {
@@ -898,6 +904,7 @@ cursor: pointer;
         gap: 24px;
         margin-left: 108px;
         margin-bottom: 72px;
+        margin-top: 0px;
     }
 
     .footer-subscribe {
@@ -908,7 +915,6 @@ cursor: pointer;
 @media (min-width: 768px) {
     .footer-logo-paragraph {
         text-align: left;
-        min-width: 264px;
         margin-bottom: 0px;
     }
 
@@ -949,6 +955,7 @@ cursor: pointer;
 
     .footer-logo-social {
         display: flex;
+        margin-top: 0px;
     }
        .footer-subscribe {
         margin-left: 80px;
